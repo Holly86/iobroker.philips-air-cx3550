@@ -1,0 +1,14 @@
+# Changelog
+
+## 1.6.0-cx3550.0
+
+- Added production-clean local CoAP support for Philips/Versuni CX3550/01.
+- Added CX3550/01 controls for power, fan modes, sleep mode, natural breeze, oscillation and beep.
+- Added read-only CX3550/01 timer status states.
+- Removed experimental timer control paths because local timer writes can switch the CX3550/01 off.
+- Removed raw CX3550 test controls and verbose reverse-engineering diagnostics from productive code.
+- Kept existing Philips Air mapping and control paths unchanged.
+
+## 1.5.0
+
+- Upstream `ioBroker.philips-air` baseline with CoAP stability fixes and adapter checker cleanup.

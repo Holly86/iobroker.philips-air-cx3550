@@ -1,0 +1,244 @@
+{
+  "common": {
+    "name": "philips-air",
+    "version": "1.6.0-cx3550.0",
+    "news": {
+      "1.6.0-cx3550.0": {
+        "en": "Added production-clean local CoAP support for the Philips/Versuni CX3550/01 fan. Supports power, fan modes, sleep mode, natural breeze, oscillation, beep and read-only timer status. Timer control is intentionally not exposed because local timer writes can switch the CX3550/01 off.",
+        "de": "Produktionsbereinigte lokale CoAP-Unterstuetzung fuer den Philips/Versuni CX3550/01 Ventilator hinzugefuegt. Unterstuetzt Power, Lueftermodi, Schlafmodus, natuerliche Brise, Oszillation, Piepton und schreibgeschuetzten Timerstatus. Timer-Control wird bewusst nicht angeboten, weil lokale Timer-Schreibbefehle den CX3550/01 ausschalten koennen."
+      },
+      "1.5.0": {
+        "en": "CoAP connection now stays stable instead of disconnecting every few minutes\nFixed adapter checker warnings",
+        "de": "Die CoAP-Verbindung bleibt nun stabil, anstatt alle paar Minuten abzubrechen.\nBehobene Warnungen des Adapterprüfers",
+        "ru": "Теперь соединение CoAP остается стабильным, а не обрывается каждые несколько минут.\nИсправлены предупреждения проверки адаптера.",
+        "pt": "A conexão CoAP agora permanece estável em vez de desconectar a cada poucos minutos.\nAvisos corrigidos do verificador de adaptadores",
+        "nl": "De CoAP-verbinding blijft nu stabiel in plaats van om de paar minuten weg te vallen.\nOpgeloste waarschuwingen van de adaptercontrole",
+        "fr": "La connexion CoAP reste désormais stable au lieu de se déconnecter toutes les quelques minutes.\nAvertissements du vérificateur d'adaptateur corrigés",
+        "it": "La connessione CoAP ora rimane stabile invece di disconnettersi ogni pochi minuti.\nAvvisi corretti del controllo dell'adattatore",
+        "es": "La conexión CoAP ahora se mantiene estable en lugar de desconectarse cada pocos minutos.\nSe corrigieron las advertencias del verificador de adaptadores.",
+        "pl": "Połączenie CoAP pozostaje teraz stabilne i nie rozłącza się co kilka minut\nNaprawiono ostrzeżenia modułu sprawdzającego adapter",
+        "uk": "З’єднання CoAP тепер залишається стабільним, а не розривається кожні кілька хвилин.\nВиправлені попередження перевірки адаптерів",
+        "zh-cn": "CoAP 连接现在保持稳定，不会像以前那样每隔几分钟就断开一次。\n修复了适配器检查器警告"
+      },
+      "1.4.0": {
+        "en": "Connection to CoAP and HTTP devices is much more reliable now: several cases that could crash the adapter, freeze the connection or stop it from reconnecting have been fixed\nAir quality, filter and on/off values are now shown with the correct type and update reliably\nClearer log messages, including a hint to switch to CoAP when a device does not answer on HTTP\nHTTP mode no longer needs the extra \"philips-air\" package and its outdated dependencies\nThe device address field now accepts an IP address or a hostname and warns about invalid input\nDependencies updated",
+        "de": "Die Verbindung zu CoAP- und HTTP-Geräten ist jetzt deutlich zuverlässiger: Mehrere Fehler, die zum Absturz des Adapters, zum Einfrieren der Verbindung oder zum Verhindern der Wiederverbindung führen konnten, wurden behoben.\nLuftqualitäts-, Filter- und Ein-/Aus-Werte werden nun mit dem korrekten Typ angezeigt und zuverlässig aktualisiert.\nAussagekräftigere Protokollmeldungen, einschließlich eines Hinweises zum Wechsel zu CoAP, wenn ein Gerät nicht auf HTTP antwortet.\nDer HTTP-Modus benötigt nicht mehr das zusätzliche Paket \"philips-air\" und seine veralteten Abhängigkeiten.\nDas Feld für die Geräteadresse akzeptiert nun eine IP-Adresse oder einen Hostnamen und warnt bei ungültiger Eingabe.\nAbhängigkeiten aktualisiert",
+        "ru": "Теперь подключение к устройствам CoAP и HTTP стало намного надежнее: исправлены несколько ошибок, которые могли привести к сбою адаптера, зависанию соединения или невозможности его повторного подключения.\nЗначения параметров качества воздуха, состояния фильтра и включения/выключения теперь отображаются с указанием правильного типа и обновляются корректно.\nБолее понятные сообщения в логах, включая подсказку о необходимости переключения на CoAP, если устройство не отвечает по HTTP-запросу.\nВ режиме HTTP больше не требуется дополнительный пакет \"philips-air\" и его устаревшие зависимости.\nВ поле адреса устройства теперь принимается IP-адрес или имя хоста, и выдается предупреждение о недопустимом вводе.\nЗависимости обновлены.",
+        "pt": "A conexão com dispositivos CoAP e HTTP agora é muito mais confiável: diversos problemas que podiam travar o adaptador, congelar a conexão ou impedir sua reconexão foram corrigidos.\nA qualidade do ar, o filtro e os valores de ligado/desligado agora são exibidos com o tipo correto e atualizam de forma confiável.\nMensagens de registro mais claras, incluindo uma dica para alternar para CoAP quando um dispositivo não responder em HTTP.\nO modo HTTP não precisa mais do pacote adicional \"philips-air\" e suas dependências obsoletas.\nO campo de endereço do dispositivo agora aceita um endereço IP ou um nome de host e exibe um aviso sobre entradas inválidas.\nDependências atualizadas",
+        "nl": "De verbinding met CoAP- en HTTP-apparaten is nu veel betrouwbaarder: diverse problemen die de adapter konden laten vastlopen, de verbinding konden blokkeren of herverbinding konden voorkomen, zijn verholpen.\nDe luchtkwaliteit, filter- en aan/uit-waarden worden nu correct weergegeven en betrouwbaar bijgewerkt.\nDuidelijkere logberichten, inclusief een aanwijzing om over te schakelen naar CoAP wanneer een apparaat niet reageert via HTTP.\nDe HTTP-modus heeft het extra \"philips-air\"-pakket en de bijbehorende verouderde afhankelijkheden niet langer nodig.\nHet veld voor het apparaatadres accepteert nu een IP-adres of een hostnaam en waarschuwt voor ongeldige invoer.\nAfhankelijkheden bijgewerkt",
+        "fr": "La connexion aux périphériques CoAP et HTTP est désormais beaucoup plus fiable : plusieurs problèmes susceptibles de provoquer le plantage de l’adaptateur, le blocage de la connexion ou l’impossibilité de se reconnecter ont été résolus.\nLes valeurs de qualité de l'air, de filtration et de mise en marche/arrêt sont désormais affichées avec le type correct et se mettent à jour de manière fiable.\nDes messages de journalisation plus clairs, incluant une indication de passer à CoAP lorsqu'un périphérique ne répond pas sur HTTP.\nLe mode HTTP ne nécessite plus le paquet supplémentaire « philips-air » et ses dépendances obsolètes.\nLe champ d'adresse du périphérique accepte désormais une adresse IP ou un nom d'hôte et signale les saisies invalides.\nDépendances mises à jour",
+        "it": "La connessione ai dispositivi CoAP e HTTP è ora molto più affidabile: sono stati risolti diversi casi che potevano causare il blocco dell'adattatore, il congelamento della connessione o l'impossibilità di riconnettersi.\nLa qualità dell'aria, il filtro e i valori di accensione/spegnimento vengono ora visualizzati con il tipo corretto e si aggiornano in modo affidabile\nMessaggi di log più chiari, incluso un suggerimento per passare a CoAP quando un dispositivo non risponde su HTTP\nLa modalità HTTP non necessita più del pacchetto aggiuntivo \"philips-air\" e delle sue dipendenze obsolete.\nIl campo dell'indirizzo del dispositivo ora accetta un indirizzo IP o un nome host e avvisa in caso di input non valido.\nDipendenze aggiornate",
+        "es": "La conexión a dispositivos CoAP y HTTP es ahora mucho más fiable: se han solucionado varios problemas que podían provocar el fallo del adaptador, congelar la conexión o impedir que se reconectara.\nLa calidad del aire, los filtros y los valores de encendido/apagado ahora se muestran con el tipo correcto y se actualizan de forma fiable.\nMensajes de registro más claros, incluyendo una sugerencia para cambiar a CoAP cuando un dispositivo no responde en HTTP.\nEl modo HTTP ya no necesita el paquete adicional \"philips-air\" ni sus dependencias obsoletas.\nEl campo de dirección del dispositivo ahora acepta una dirección IP o un nombre de host y advierte sobre entradas no válidas.\nDependencias actualizadas",
+        "pl": "Połączenie z urządzeniami CoAP i HTTP jest teraz znacznie bardziej niezawodne: naprawiono kilka przypadków, które mogły spowodować awarię adaptera, zamrożenie połączenia lub uniemożliwienie ponownego nawiązania połączenia\nJakość powietrza, filtr i wartości włączania/wyłączania są teraz wyświetlane z prawidłowym typem i aktualizowane niezawodnie\nBardziej przejrzyste komunikaty dziennika, w tym wskazówka dotycząca przejścia na protokół CoAP, gdy urządzenie nie odpowiada na protokół HTTP\nTryb HTTP nie wymaga już dodatkowego pakietu „philips-air” i jego przestarzałych zależności\nPole adresu urządzenia akceptuje teraz adres IP lub nazwę hosta i wyświetla ostrzeżenie o nieprawidłowym wprowadzeniu danych\nZaktualizowano zależności",
+        "uk": "Підключення до пристроїв CoAP та HTTP тепер набагато надійніше: виправлено кілька випадків, які могли призвести до збою адаптера, зависання з'єднання або перешкоджання його повторному підключенню.\nЗначення якості повітря, фільтра та ввімкнення/вимкнення тепер відображаються з правильним типом та надійно оновлюються.\nЗрозуміліші повідомлення журналу, включаючи підказку про перемикання на CoAP, коли пристрій не відповідає через HTTP\nРежим HTTP більше не потребує додаткового пакета \"philips-air\" та його застарілих залежностей\nПоле адреси пристрою тепер приймає IP-адресу або ім'я хоста та попереджає про недійсне введення\nЗалежності оновлено",
+        "zh-cn": "现在与 CoAP 和 HTTP 设备的连接更加可靠：已修复了几个可能导致适配器崩溃、连接冻结或无法重新连接的问题。\n空气质量、过滤器和开关状态现在以正确的类型显示，并能可靠地更新。\n更清晰的日志消息，包括当设备对 HTTP 请求无响应时切换到 CoAP 的提示。\nHTTP 模式不再需要额外的“philips-air”软件包及其过时的依赖项。\n设备地址字段现在接受 IP 地址或主机名，并对无效输入发出警告。\n依赖项已更新"
+      },
+      "1.3.0": {
+        "en": "Adapter requires node.js >= 22 now\nAdapter requires admin >= 7.7.22 now\nDependencies have been updated",
+        "de": "Adapter benötigt node.js >= 22 jetzt\nAdapter benötigt Admin >= 7.7.22 jetzt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js >= 22 сейчас\nАдаптер требует администратора >= 7.7.22\nЗависимости были обновлены",
+        "pt": "Adaptador requer nod.js >= 22 agora\nAdaptador requer admin >= 7.7.22 agora\nAs dependências foram atualizadas",
+        "nl": "Voor de adapter zijn node.js < 22 nu nodig\nAdapter vereist admin < 7.7.22 nu\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite node.js >= 22 maintenant\nAdaptateur nécessite admin >= 7.7.22 maintenant\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede node.js >= 22 ora\nAdattatore richiede admin >= 7.7.22 ora\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js ю= 22 ahora\nEl adaptador requiere administrador= 7.7.22 ahora\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js > = 22\nAdapter wymaga admin > = 7.7.22\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js >= 22 тепер\nАдаптер вимагає адмін >= 7.7.22 тепер\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js 现在22\n适任者需要管理员 \\ 7.7.22 现在\n依赖关系已更新"
+      },
+      "1.2.0": {
+        "en": "Adapter requires node.js >= 20, js-controller >= 6 and admin >= 6 now.\nAdapter migrated to eslint 9 / @iobroker/eslint-config\nMaterialize UI support has been removed\njsonConfig responsive design size attributes have been added\nDependencies have been updated",
+        "de": "Adapter benötigt node.js >= 20, js-controller >= 6 und admin >= 6 jetzt.\nAdapter migriert auf Eslint 9 / @iobroker/eslint-config\nMaterialize UI-Unterstützung wurde entfernt\njsonConfig responsive design size Attributes wurden hinzugefügt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js >=20, js-контроллер >= 6 и admin >= Сейчас 6.\nАдаптер мигрировал в eslint 9 / @iobroker/eslint-config\nМатериализоваться поддержка пользовательского интерфейса была удалена\nдобавлены адаптивные атрибуты дизайна jsonConfig\nЗависимость обновлена",
+        "pt": "Adapter requer node.js >= 20, js-controller >= 6 e admin >= 6 agora.\nAdaptador migrado para eslint 9 / @iobroker/eslint-config\nMaterializar apoio UI foi removido\njsonConfig atributos de tamanho de design responsivo foram adicionados\nAs dependências foram atualizadas",
+        "nl": "Voor adapters zijn node.js (m.u.v. js-controller) 6 en admin Zes nu.\nAdapter gemigreerd naar eslint 9 / @iobroker/eslint-config\nMateriaal UI ondersteuning is verwijderd\njsonConfig responsieve ontwerpgrootte attributen zijn toegevoegd\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite node.js >= 20, js-controller >= 6 et administrateur >= 6 maintenant.\nAdaptateur migré vers eslint 9 / @iobroker/eslint-config\nMatérialiser le soutien à l'assurance-chômage a été supprimé\ndes attributs de taille de conception responsive jsonConfig ont été ajoutés\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede node.js >= 20, js-controller >= 6 e admin >= Ora sei.\nAdattatore migrato a eslint 9 / @iobroker/eslint-config\nIl supporto UI è stato rimosso\njsonConfig caratteristiche di dimensione reattiva del design sono stati aggiunti\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js >= 20, js-controller √= 6 y admin= 6 ahora.\nAdaptador migrado a eslint 9 / @iobroker/eslint-config\nMaterialize UI support has been removed\njsonConfig sensible tamaño atributos de diseño se han añadido\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js > = 20, kontroler js- > = 6 i admin > = 6 teraz.\nAdapter migrated to eslint 9 / @ iobroker / eslint- config\nMatrialize UI wsparcie zostało usunięte\ndodano atrybuty wielkości projektu jsonConfig\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js >= 20, js-controller >= 6 і admin >= 6 тепер.\nАдаптер мігрований до eslint 9 / @iobroker/eslint-config\nВидалено підтримку UI\njsonConfig додано чуйні атрибути розмірів дизайну\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js QQ20,js控制器QQ 第6条 行政 六点了.\n适应器迁移到 Eslint 9 / @iobroster/eslint-config\n实现用户界面支持已被删除\n添加了 jsonConfig 响应设计大小属性\n依赖关系已更新"
+      },
+      "1.1.0": {
+        "en": "Adapter requires node.js >= 18 and js-controller >= 5 now\nDependencies have been updated",
+        "de": "Adapter benötigt node.js >= 18 und js-controller >= 5 jetzt\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js >= 18 и js-контроллер >= 5 сейчас\nЗависимость обновлена",
+        "pt": "Adapter requer node.js >= 18 e js-controller >= 5 agora\nAs dependências foram atualizadas",
+        "nl": "Voor adaptor zijn node.js < 18 en js-controller > Nu 5\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "L'adaptateur nécessite node.js >= 18 et js-controller >= 5 maintenant\nLes dépendances ont été actualisées",
+        "it": "Adattatore richiede node.js >= 18 e js-controller >= 5 ora\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js √≥= 18 y js-controller 5 ahora\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js > = 18 i kontroler js- > = 5 teraz\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js >= 18 і js-controller >= 5 тепер\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js QQ18和js控制器 QQ 现在5号\n依赖关系已更新"
+      },
+      "1.0.3": {
+        "en": "Finalized and optimized HTTP communication protocol\nFixed type issues with device.error",
+        "de": "Endgültiges und optimiertes HTTP-Kommunikationsprotokoll\nBehobene Typprobleme mit Gerät. Fehler",
+        "ru": "Заключенный и оптимизированный протокол связи HTTP\nИсправлены проблемы типа с устройством. ошибка",
+        "pt": "Protocolo de comunicação HTTP finalizado e otimizado\nProblemas de tipo fixo com dispositivo. erro",
+        "nl": "Eindig en optimaal HTP communicatie protocol\nGerepareerde type kwesties met apparaat. Error",
+        "fr": "Protocole de communication HTTP finalisé et optimisé\nProblèmes de type fixe avec l'appareil. erreur",
+        "it": "Protocollo di comunicazione HTTP finalizzato e ottimizzato\nProblemi di tipo fisso con dispositivo. errore",
+        "es": "Protocolo de comunicación HTTP finalizado y optimizado\nProblemas de tipo fijo con dispositivo. error",
+        "pl": "Ostateczny i zoptymalizowany protokół komunikacyjny HTTP\nZagadnienia typów z urządzeniem. błąd",
+        "uk": "Закінчений і оптимізований протокол зв'язку HTTP\nФіксовані питання типу з пристроєм. Про нас",
+        "zh-cn": "四. 最后和最佳的技术转让议定书\n有装置的混合类型问题。 错误"
+      },
+      "1.0.2": {
+        "en": "Small fixes done\nAdded HTTP communication protocol (untested!)\nAdded `gentle/GT` for AC2939",
+        "de": "Kleine Reparaturen erledigt\nHTTP-Kommunikationsprotokoll (nicht getestet) hinzugefügt\nHinzugefügt sanft/GT für AC2939",
+        "ru": "Небольшие исправления сделаны\nДобавлен протокол связи HTTP (до конца)\nДобавлено нежное/GT для AC2939",
+        "pt": "Pequenas correções feitas\nAdicionado protocolo de comunicação HTTP (untested)\nAdicionado suave/GT para AC2939",
+        "nl": "Kleine reparaties gedaan\nVoeg HTP communicatie protocol toe\nAC2939",
+        "fr": "Petites corrections faites\nAjout du protocole de communication HTTP (non testé) \nAjouté doux/GT pour AC2939",
+        "it": "Piccoli corredi fatti\nAggiunto protocollo di comunicazione HTTP (non testato)\nAggiunto gentile/GT per AC2939",
+        "es": "Pequeños arreglos realizados\n¡Agregado protocolo de comunicación HTTP (usted)\nAñadido suave/GT para AC2939",
+        "pl": "Drobne poprawki\nAdded HTTP Communication Protocol (ang.)\nAdddition for AC293939 (ang.)",
+        "uk": "Маленькі застібки\nДодано протокол зв'язку HTTP (докладений)\nДодано ніжний / GT для AC2939",
+        "zh-cn": "小额配件\n添加了HTTP通信议定书(无证)\n增加AC2939的智囊团"
+      }
+    },
+    "titleLang": {
+      "en": "Philips air purifier",
+      "de": "Philips Luftreiniger",
+      "ru": "Очиститель воздуха Philips",
+      "pt": "Purificador de ar Philips",
+      "nl": "Philips luchtreiniger",
+      "fr": "Purificateur d'air Philips",
+      "it": "Purificatore d'aria Philips",
+      "es": "Purificador de aire Philips",
+      "pl": "Oczyszczacz powietrza firmy Philips",
+      "zh-cn": "飞利浦空气净化器",
+      "uk": "Очищувач повітря Philips"
+    },
+    "desc": {
+      "en": "Connects Philips air purifiers and selected Philips/Versuni fans with ioBroker",
+      "de": "Verbindet Philips Luftreiniger und ausgewaehlte Philips/Versuni Ventilatoren mit ioBroker",
+      "ru": "Соединяет очиститель воздуха Philips с ioBroker",
+      "pt": "Conecta purificador de ar Philips com ioBroker",
+      "nl": "Verbindt de Philips-luchtreiniger met ioBroker",
+      "fr": "Connecte le purificateur d'air Philips à ioBroker",
+      "it": "Collega il purificatore d'aria Philips a ioBroker",
+      "es": "Conecta el purificador de aire Philips con ioBroker",
+      "pl": "Łączy oczyszczacz powietrza Philips z ioBroker",
+      "zh-cn": "将飞利浦空气净化器与ioBroker连接",
+      "uk": "Підключає очищувач повітря Philips до ioBroker"
+    },
+    "authors": [
+      "dogafox <dogafox@gmail.com>",
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
+    ],
+    "keywords": [
+      "philips",
+      "air purifier",
+      "fan",
+      "cx3550"
+    ],
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "philips-air.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.philips-air/master/admin/philips-air.png",
+    "readme": "https://github.com/iobroker-community-adapters/ioBroker.philips-air/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "household",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "adminUI": {
+      "config": "json"
+    },
+    "tier": 2,
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.7.22"
+      }
+    ]
+  },
+  "native": {
+    "host": "",
+    "aliveTimeout": 30000,
+    "reconnectInterval": 30000,
+    "protocol": "coap"
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.key",
+      "type": "state",
+      "common": {
+        "role": "state",
+        "name": "HTTP secret key",
+        "type": "string",
+        "read": true,
+        "write": false,
+        "def": ""
+      },
+      "native": {}
+    },
+    {
+      "_id": "control",
+      "type": "channel",
+      "common": {
+        "name": "Control air purifier"
+      },
+      "native": {}
+    },
+    {
+      "_id": "filter",
+      "type": "channel",
+      "common": {
+        "name": "Filter information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "status",
+      "type": "channel",
+      "common": {
+        "name": "Device status"
+      },
+      "native": {}
+    },
+    {
+      "_id": "device",
+      "type": "channel",
+      "common": {
+        "name": "Device information"
+      },
+      "native": {}
+    }
+  ],
+  "version": "1.6.0-cx3550.0"
+}
