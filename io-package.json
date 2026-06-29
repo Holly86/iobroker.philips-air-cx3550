@@ -147,7 +147,7 @@
     "icon": "philips-air.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.philips-air/master/admin/philips-air.png",
-    "readme": "https://github.com/iobroker-community-adapters/ioBroker.philips-air/blob/master/README.md",
+    "readme": "https://github.com/Holly86/iobroker.philips-air-cx3550/blob/main/README.md",
     "loglevel": "info",
     "mode": "daemon",
     "type": "household",

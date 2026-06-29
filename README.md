@@ -51,8 +51,16 @@ After uploading this folder to GitHub, install the adapter in ioBroker Admin:
 
 1. Open **Adapters**.
 2. Choose **Install from custom URL**.
-3. Paste the GitHub repository URL of your fork.
+3. Paste the GitHub repository URL of your fork and use `philips-air` as adapter name if your ioBroker Admin asks for it.
 4. Install and create or restart the adapter instance.
+
+CLI installation:
+
+```sh
+iobroker url https://github.com/Holly86/iobroker.philips-air-cx3550.git philips-air
+```
+
+The final `philips-air` argument is intentional. The GitHub repository has a fork suffix, but the ioBroker adapter name remains `philips-air`.
 
 Recommended CX3550/01 configuration:
 
