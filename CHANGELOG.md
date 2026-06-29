@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0-cx3550.1
+
+- Avoid repeated CoAP subscribe timeout errors on CX3550/01 when sync succeeds but the observe stream stays quiet.
+- Keep the observe request open so later status packets can still update ioBroker states.
+- Real sync and network failures are still reported as connection errors.
+
 ## 1.6.0-cx3550.0
 
 - Added production-clean local CoAP support for Philips/Versuni CX3550/01.

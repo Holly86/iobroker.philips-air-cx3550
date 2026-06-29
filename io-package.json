@@ -1,8 +1,12 @@
 {
   "common": {
     "name": "philips-air",
-    "version": "1.6.0-cx3550.0",
+    "version": "1.6.0-cx3550.1",
     "news": {
+      "1.6.0-cx3550.1": {
+        "en": "Treat a quiet CX3550/01 CoAP observe stream after successful sync as connected instead of logging repeated subscribe timeout errors.",
+        "de": "Ein stiller CX3550/01-CoAP-Observe-Stream nach erfolgreichem Sync wird nun als verbunden behandelt, statt wiederholte Subscribe-Timeout-Fehler zu protokollieren."
+      },
       "1.6.0-cx3550.0": {
         "en": "Added production-clean local CoAP support for the Philips/Versuni CX3550/01 fan. Supports power, fan modes, sleep mode, natural breeze, oscillation, beep and read-only timer status. Timer control is intentionally not exposed because local timer writes can switch the CX3550/01 off.",
         "de": "Produktionsbereinigte lokale CoAP-Unterstuetzung fuer den Philips/Versuni CX3550/01 Ventilator hinzugefuegt. Unterstuetzt Power, Lueftermodi, Schlafmodus, natuerliche Brise, Oszillation, Piepton und schreibgeschuetzten Timerstatus. Timer-Control wird bewusst nicht angeboten, weil lokale Timer-Schreibbefehle den CX3550/01 ausschalten koennen."
@@ -240,5 +244,5 @@
       "native": {}
     }
   ],
-  "version": "1.6.0-cx3550.0"
+  "version": "1.6.0-cx3550.1"
 }

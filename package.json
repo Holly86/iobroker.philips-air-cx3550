@@ -1,6 +1,6 @@
 {
   "name": "iobroker.philips-air",
-  "version": "1.6.0-cx3550.0",
+  "version": "1.6.0-cx3550.1",
   "description": "Connects Philips air purifiers and the Philips/Versuni CX3550 fan with ioBroker",
   "author": "bdeluefox <dogafox@gmail.com>",
   "contributors": [
