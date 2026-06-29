@@ -1,8 +1,12 @@
 {
   "common": {
     "name": "philips-air",
-    "version": "1.6.0-cx3550.1",
+    "version": "1.6.0-cx3550.2",
     "news": {
+      "1.6.0-cx3550.2": {
+        "en": "Mark the CX3550/01 CoAP connection as connected immediately after successful sync, even before the first observe status packet arrives.",
+        "de": "Die CX3550/01-CoAP-Verbindung wird direkt nach erfolgreichem Sync als verbunden markiert, auch bevor das erste Observe-Statuspaket eintrifft."
+      },
       "1.6.0-cx3550.1": {
         "en": "Treat a quiet CX3550/01 CoAP observe stream after successful sync as connected instead of logging repeated subscribe timeout errors.",
         "de": "Ein stiller CX3550/01-CoAP-Observe-Stream nach erfolgreichem Sync wird nun als verbunden behandelt, statt wiederholte Subscribe-Timeout-Fehler zu protokollieren."
@@ -244,5 +248,5 @@
       "native": {}
     }
   ],
-  "version": "1.6.0-cx3550.1"
+  "version": "1.6.0-cx3550.2"
 }

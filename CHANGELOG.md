@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.0-cx3550.2
+
+- Mark the device connection as connected immediately after a successful CoAP sync response.
+- This fixes ioBroker showing `Verbunden mit Geraet oder Dienst` as false while the CX3550/01 is reachable and has returned a valid session key.
+
 ## 1.6.0-cx3550.1
 
 - Avoid repeated CoAP subscribe timeout errors on CX3550/01 when sync succeeds but the observe stream stays quiet.
